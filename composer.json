@@ -1,0 +1,21 @@
+{
+    "name": "galih/odeo",
+    "description": "Coding challenge Odeo",
+    "authors": [
+        {
+            "name": "galih",
+            "email": "galihabdullah471@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "1.25.1",
+        "doctrine/dbal": "2.12.0",
+      "ext-json": "*"
+    },
+    "type" : "project",
+    "autoload" : {
+        "psr-4" : {
+            "App\\" : "App/"
+        }
+    }
+}
