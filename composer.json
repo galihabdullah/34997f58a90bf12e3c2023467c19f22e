@@ -1,0 +1,30 @@
+{
+    "name": "galih/odeo",
+    "description": "Coding challenge Odeo",
+    "authors": [
+        {
+            "name": "galih",
+            "email": "galihabdullah471@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "1.25.1",
+        "ext-json": "*",
+        "ext-dom": "*",
+        "adhocore/jwt": "^1.1",
+        "guzzlehttp/guzzle": "^7.0",
+        "google/apiclient": "^2.7",
+        "zircote/swagger-php": "^3.1",
+        "phpmailer/phpmailer": "^6.1",
+        "enqueue/simple-client": "^0.10.4",
+        "enqueue/fs": "^0.10.4",
+        "pda/pheanstalk": "^4.0",
+        "illuminate/database": "^8.14"
+    },
+    "type" : "project",
+    "autoload" : {
+        "psr-4" : {
+            "App\\" : "App/"
+        }
+    }
+}

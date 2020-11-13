@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="node_modules/swagger-ui-dist/swagger-ui.css" />
+<body>
+<div id="swagger-ui"></div>
+<script src="node_modules/swagger-ui-dist/swagger-ui-bundle.js"></script>
+<script src="node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js"></script>
+<script type="text/javascript">
+    window.onload = function() {
+        // Build a system
+        const ui = SwaggerUIBundle({
+            url: "http://localhost:8080/json",
+            dom_id: '#swagger-ui',
+            presets: [
+            SwaggerUIBundle.presets.apis,
+            SwaggerUIStandalonePreset,
+        ],
+
+            plugins: [
+            SwaggerUIBundle.plugins.DownloadUrl
+        ],
+
+            layout: "StandaloneLayout",
+            oauth2RedirectUrl : "http://localhost:8080/docs"
+    })
+        ui.initOAuth({
+            clientId: "996b2daa03a9c446df7b",
+            clientSecret: "79b359db556637d784013cd941b9a4342e3fd6c9",
+            appName: "galih-test",
+            scopeSeparator: " ",
+            scopes: "user email",
+            usePkceWithAuthorizationCodeGrant: true,
+        })
+        window.ui = ui
+    }
+
+</script>
+</body>
+</html>
