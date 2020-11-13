@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '64178680608a870422a7165bfc373b8ac34acd0a',
+    'reference' => '666e5104a88ed130889a6a76aeceb01f993a2284',
     'name' => 'galih/odeo',
   ),
   'versions' => 
@@ -130,7 +130,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '64178680608a870422a7165bfc373b8ac34acd0a',
+      'reference' => '666e5104a88ed130889a6a76aeceb01f993a2284',
     ),
     'google/apiclient' => 
     array (

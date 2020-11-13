@@ -71,6 +71,9 @@ class HomeController
             $user = User::where('username', $attributes['username'])
                 ->where('password', $attributes['password'])
                 ->first();
+            if(!$user){
+                return $res->status(422)->toJSON(['error' => 'user tidak ditemukan']);
+            }
             $jwt = new JWT('secret', 'HS256', 3600, 10);
             $token = $jwt->encode([
                 'uid'    => $user->id,

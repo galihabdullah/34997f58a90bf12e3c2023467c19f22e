@@ -10,19 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82f6460a-756c-4d54-bdfa-45b578e116c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.docker/conf/beanstalkd-console/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/conf/beanstalkd-console/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/conf/beanstalkd-console/install.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Consumer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Models/Emails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Publisher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/docs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/worker.php" afterDir="false" />
-    </list>
+    <list default="true" id="82f6460a-756c-4d54-bdfa-45b578e116c8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +21,16 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="DockerExecCommand">
+    <ExecCommand>
+      <option name="command" value="php /var/www/html/worker.php" />
+      <option name="imageId" value="sha256:c39a868aad02a383c7e490e0fc4a5b0217f667f2de764bc2755e315a5adf64a1" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="php /var/www/html/worker.php" />
+      <option name="imageId" value="sha256:f5231e3d577eeae04522526a1e17eb4b9afa71712e1e3d3368c097953e3279bf" />
+    </ExecCommand>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -121,7 +119,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../beanstalkmonitor" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -161,7 +159,7 @@
       <workItem from="1605083981342" duration="2008000" />
       <workItem from="1605175321427" duration="7607000" />
       <workItem from="1605250775796" duration="39000" />
-      <workItem from="1605258408322" duration="1600000" />
+      <workItem from="1605258408322" duration="12719000" />
     </task>
     <servers />
   </component>
@@ -185,25 +183,37 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="553" y="277" width="297" height="239" key="#Port_bindings/47.27.1319.741@47.27.1319.741" timestamp="1605179698987" />
-    <state x="439" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605181368892">
+    <state x="552" y="298" width="299" height="197" key="#Volume_binding" timestamp="1605263697165">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="439" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/47.27.1319.741@47.27.1319.741" timestamp="1605181368892" />
+    <state x="552" y="298" width="299" height="197" key="#Volume_binding/47.27.1319.741@47.27.1319.741" timestamp="1605263697165" />
+    <state x="164" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605265901600">
+      <screen x="47" y="27" width="1319" height="741" />
+    </state>
+    <state x="164" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/47.27.1319.741@47.27.1319.741" timestamp="1605265901600" />
+    <state x="404" y="198" width="621" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605270759282">
+      <screen x="47" y="27" width="1319" height="741" />
+    </state>
+    <state x="404" y="198" width="621" height="396" key="#com.intellij.fileTypes.FileTypeChooser/47.27.1319.741@47.27.1319.741" timestamp="1605270759282" />
+    <state x="439" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605262320865">
+      <screen x="47" y="27" width="1319" height="741" />
+    </state>
+    <state x="439" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/47.27.1319.741@47.27.1319.741" timestamp="1605262320865" />
     <state x="440" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1604978716668">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="440" y="311" width="523" height="171" key="ComposerInitDialogKey/47.27.1319.741@47.27.1319.741" timestamp="1604978716668" />
-    <state x="484" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1605079467405">
+    <state x="484" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1605260662231">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="484" y="140" width="424" height="513" key="FileChooserDialogImpl/47.27.1319.741@47.27.1319.741" timestamp="1605079467405" />
+    <state x="484" y="140" width="424" height="513" key="FileChooserDialogImpl/47.27.1319.741@47.27.1319.741" timestamp="1605260662231" />
     <state x="449" y="116" width="505" height="561" key="NewPhpClassDialog" timestamp="1605077256738">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="449" y="116" width="505" height="561" key="NewPhpClassDialog/47.27.1319.741@47.27.1319.741" timestamp="1605077256738" />
-    <state x="369" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1604987675268">
+    <state x="369" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605269896458">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="369" y="89" width="672" height="678" key="search.everywhere.popup/47.27.1319.741@47.27.1319.741" timestamp="1604987675268" />
+    <state x="369" y="89" width="672" height="678" key="search.everywhere.popup/47.27.1319.741@47.27.1319.741" timestamp="1605269896458" />
   </component>
 </project>
