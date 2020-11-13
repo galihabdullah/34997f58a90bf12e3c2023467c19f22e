@@ -43,7 +43,6 @@ class Consumer
     public function process($msg)
     {
         $emails = json_decode($msg, true);
-        $send = new Emails();
         $content = $emails['message'];
         $sendMail = $this->sendEmail($emails);
         $sendMail->msgHTML($content);

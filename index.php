@@ -10,19 +10,17 @@ use App\Lib\Response;
 
 App::run();
 
-
-Router::get('/home', function (Request $req, Response $res){
-    (new HomeController())->index($req, $res);
+Router::get('/', function (Request $req, Response $res){
+    (new HomeController())->docs($req, $res);
 });
+
+
 
 Router::post('/login', function (Request $req, Response $res){
     (new HomeController())->login($req, $res);
 });
 
 
-Router::get('/docs', function (Request $req, Response $res){
-    (new HomeController())->docs($req, $res);
-});
 
 Router::get('/json', function (Request $req, Response $res){
     (new HomeController())->docJson($req, $res);
