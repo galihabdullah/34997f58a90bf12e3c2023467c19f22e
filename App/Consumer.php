@@ -19,13 +19,17 @@ class Consumer
      * @var \string[][]
      */
     private $config;
+    /**
+     * @var array|false
+     */
+    private $env;
 
     public function __construct(array $args)
     {
         $this->config = ['queue' => ['host' => 'beanstalkd']]; // Don't mind this. I typically have a config file, but I moved it here for purposes of this tutorial. Use IP or Domain for the host.
-
         $this->queue = $args['queue'];
         $this->client = Pheanstalk::create('beanstalkd');
+        $this->env = parse_ini_file( __DIR__."/../.env");
     }
 
     public function listen()
@@ -67,9 +71,9 @@ class Consumer
         $mail->SMTPAuth   = TRUE;
         $mail->SMTPSecure = "tls";
         $mail->Port       = 587;
-        $mail->Host       = "smtp.gmail.com";
-        $mail->Username   = "galihabdullahtestapp@gmail.com";
-        $mail->Password   = "ismetyonardi123";
+        $mail->Host       = $this->env['SMTP_HOST'];
+        $mail->Username   = $this->env['SMTP_USERNAME'];
+        $mail->Password   = $this->env['SMTP_PASSWORD'];
         return $mail;
     }
 
